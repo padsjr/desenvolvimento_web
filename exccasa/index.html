@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+Dividam-se em grupos de até 3 integrantes;
+Crie uma página HTML básica com:
+❖ Um cabeçalho contendo um título, e uma barra de navegação com links para
+acessar cada um dos blocos. OK
+❖ Abaixo do cabeçalho adicione dois blocos. OK
+ O primeiro deve conter um parágrafo e
+um formulário.ok
+
+No segundo deve conter duas imagens, um video e um áudio, todos
+com label.
+
+❖ Abaixo dos blocos adicione um rodapé.
+
+No formulário adicione:
+❖ Um input de cada tipo com labels,
+❖ Um combobox com label,
+❖ Uma área de texto com label,
+❖ Um Botão de Salvar e outro para Limpar os campos.
+O formulário deve ter uma action com value vazio e seu método deve ser POST. 
+-->
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Formularios</title>
+        <section>
+            <h1>Cabeçalho</h1>
+            <a href="#blocoUm">Formulário</a>
+            <a href="#blocoDois">Midia</a>
+        </section>
+
+    </head>
+    <body>
+        <section id="blocoUm">
+            <p>Preencha os dados para efetuar seu cadastro</p>
+            <form action="https://google.com.br" method ="post">
+                <br>
+                <label for="name">Usuario:</label><br>
+                <input type="text" id="name" name="usuario" placeholder="usuario" value="" required/><br>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email@email.com" placeholder="user@email.com" required/><br>
+                <br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="**********" required/><br>
+                <br>
+                <label for="">Possui fotos?</label><br>
+                <label for="sim">Sim</label>
+                <input type="radio" id="sim" name="possui_fotos" value="Sim"/>
+                <label for="nao">Não</label>
+                <input type="radio" id="nao" name="possui_fotos" value="Não"/><br>
+                <br>
+                <label for="">Quantas fotos pretende postar?</label><br>
+                <br>
+                <input type="checkbox" id="uma" name="quantidade_de_fotos" value="1">
+                <label for="uma">Apenas uma</label><br>
+                <input type="checkbox" id="dois" name="quantidade_de_fotos" value="2"/>
+                <label for="duas">Duas fotos</label><br>
+                <input type="checkbox" id="três" name="quantidade_de_fotos" value="3"/>
+                <label for="três">Três fotos</label><br>
+                <input type="checkbox" id="quatro+" name="quantidade_de_fotos" value="4 ou mais"/>
+                <label for="quatro+">Quatro fotos ou mais</label><br>
+                
+                <button>Enviar</button>
+            </form>
+        </section>
+        <section id="blocoDois">
+            <br>
+            <label>_______________________________________________________</label><br>
+            <br>
+            <label>Foto do gogole</label><br>
+            <br>
+            
+            <img 
+            src="https://s2-valor.glbimg.com/N-3N6CfiX1sa-SwA-UJZYpnhsoo=/0x0:3998x2667/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2023/0/x/0um77CSjyB2VTFJrJIfg/399324456.jpg"
+            alt="img do google"
+            width="50%"
+            height=""
+            />
+            <br>
+            <label>Foto do gogole</label><br>
+            <br>
+            <img 
+            src="https://w7.pngwing.com/pngs/177/852/png-transparent-google-images-image-search-seo-search-engine-media-search-logo-google-inc-google-thumbnail.png"
+            alt="img do google"
+            width="50%"
+            height=""
+            />
+            <br>
+            <br>
+            <br>
+            <label>Video de figma</label><br>
+            <br>
+            <video width="240" controls loop autoplay poster=".\midia\img1.png">
+                <source src=".\midia\videosite.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+            <br>
+            <br>
+            
+            <br>
+            <label>Audio estranho</label><br>
+            <br>
+            <audio width="480" controls loop autoplay>
+                <source src=".\midia\Gravando.mp3" type="audio/mp3">
+                <p>Seu navegador não é compatível com áudio html5</p>
+            </audio>
+
+
+        </section>
+
+    </body>
+    <br>
+    <footer>
+       Desenvolvido por Pedro Silveira 
+    </footer>
+</html>
