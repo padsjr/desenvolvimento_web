@@ -1,0 +1,34 @@
+body{
+    background-color: blue;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+h1{
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline;
+}
+label{
+    font-weight: 900;
+}
+.fotos:active{
+    color: brown;
+}
+input:focus{
+    background-color: rgb(226, 226, 226)
+}
+
+.fotos, .dados{
+    font-weight: 900;
+}
+
+.selecoes{
+    font-weight: normal;
+}
+#botao{
+    font-weight: normal;
+}
+.menu:hover{
+    text-decoration: none;
+
+}

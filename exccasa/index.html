@@ -26,43 +26,53 @@ O formulário deve ter uma action com value vazio e seu método deve ser POST.
         <title>Formularios</title>
         <section>
             <h1>Cabeçalho</h1>
-            <a href="#blocoUm">Formulário</a>
-            <a href="#blocoDois">Midia</a>
+            <a class="menu" href="#blocoUm">Formulário</a>
+            <a class="menu" href="#blocoDois">Midia</a>
         </section>
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body{background-color: brown;
+
+            }
+        </style>
 
     </head>
-    <body>
+    <body style="background-color: aqua;">
         <section id="blocoUm">
             <p>Preencha os dados para efetuar seu cadastro</p>
             <form action="https://google.com.br" method ="post">
                 <br>
-                <label for="name">Usuario:</label><br>
+                <label class="dados" for="name">Usuario:</label><br>
                 <input type="text" id="name" name="usuario" placeholder="usuario" value="" required/><br>
                 <br>
-                <label for="email">Email:</label><br>
+                <label class="dados" for="email">Email:</label><br>
                 <input type="email" id="email" name="email@email.com" placeholder="user@email.com" required/><br>
                 <br>
-                <label for="password">Password:</label><br>
+                <label class="dados" for="password">Password:</label><br>
                 <input type="password" id="password" name="password" placeholder="**********" required/><br>
                 <br>
-                <label for="">Possui fotos?</label><br>
+                <label class="dados" for="">Possui fotos?</label><br>
                 <label for="sim">Sim</label>
                 <input type="radio" id="sim" name="possui_fotos" value="Sim"/>
                 <label for="nao">Não</label>
                 <input type="radio" id="nao" name="possui_fotos" value="Não"/><br>
                 <br>
-                <label for="">Quantas fotos pretende postar?</label><br>
-                <br>
-                <input type="checkbox" id="uma" name="quantidade_de_fotos" value="1">
-                <label for="uma">Apenas uma</label><br>
-                <input type="checkbox" id="dois" name="quantidade_de_fotos" value="2"/>
-                <label for="duas">Duas fotos</label><br>
-                <input type="checkbox" id="três" name="quantidade_de_fotos" value="3"/>
-                <label for="três">Três fotos</label><br>
-                <input type="checkbox" id="quatro+" name="quantidade_de_fotos" value="4 ou mais"/>
-                <label for="quatro+">Quatro fotos ou mais</label><br>
+
                 
-                <button>Enviar</button>
+                <label class="fotos" for="">Quantas fotos pretende postar?</label><br>
+                <div>
+                    <br>
+                    <input type="checkbox" id="uma" name="quantidade_de_fotos" value="1">
+                    <label class="selecoes" for="uma">Apenas uma</label><br>
+                    <input type="checkbox" id="dois" name="quantidade_de_fotos" value="2"/>
+                    <label class="selecoes" for="duas">Duas fotos</label><br>
+                    <input type="checkbox" id="três" name="quantidade_de_fotos" value="3"/>
+                    <label class="selecoes" for="três">Três fotos</label><br>
+                    <input type="checkbox" id="quatro+" name="quantidade_de_fotos" value="4 ou mais"/>
+                    <label class="selecoes" for="quatro+">Quatro fotos ou mais</label><br>
+                
+                <button id="botao">Enviar</button>
+                </div>
             </form>
         </section>
         <section id="blocoDois">
